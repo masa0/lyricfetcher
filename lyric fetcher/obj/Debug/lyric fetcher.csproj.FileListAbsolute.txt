@@ -1,0 +1,9 @@
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\obj\Debug\lyric fetcher.csprojResolveAssemblyReference.cache
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\obj\Debug\lyric_fetcher.Form1.resources
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\obj\Debug\lyric_fetcher.Properties.Resources.resources
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\obj\Debug\lyric fetcher.csproj.GenerateResource.Cache
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\bin\Debug\lyric fetcher.exe
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\bin\Debug\lyric fetcher.pdb
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\obj\Debug\lyric fetcher.exe
+c:\users\owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\obj\Debug\lyric fetcher.pdb
+C:\Users\Owner\documents\visual studio 2013\Projects\lyric fetcher\lyric fetcher\bin\Debug\lyric fetcher.exe.config

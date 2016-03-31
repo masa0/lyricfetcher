@@ -28,12 +28,17 @@ namespace lyric_fetcher
             {
 
                 List<string> lyrics = new List<string>();
+
+                text1.ToLower();
+                text2.ToLower();
+
+
                 text1 = text1.Replace(" ", "");
                 text2 = text2.Replace(" ", "");
-                WebClient web = new WebClient();
-                string html = web.DownloadString(string.Format("http://www.azlyrics.com/lyrics/{0}/{1}.html", text1, text2));
-                MatchCollection ly = Regex.Matches(html, @"<!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that. -->\s*(.+?)\s*</div>", RegexOptions.Singleline);
 
+                WebClient web = new WebClient();
+                string html = web.DownloadString(string.Format("http://www.azlyrics.com/lyrics/{0}/{1}.html", text1.ToLower(), text2.ToLower()));
+                MatchCollection ly = Regex.Matches(html, @"<!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that. -->\s*(.+?)\s*</div>", RegexOptions.Singleline);
 
                 foreach (Match m in ly)
                 {
@@ -46,8 +51,8 @@ namespace lyric_fetcher
                 lyricsx = Regex.Replace(lyricsx, "<br>", "\r\n");
                 lyricsx = lyricsx.Replace("&", " &");
                 lyricsx = Regex.Replace(lyricsx, " &quot;", "\"");
-
-               // listBox1.DataSource = lyricsx;
+                lyricsx = lyricsx.Replace("â€™", "");
+               
                 textBox3.Text = lyricsx;
                 
             }
@@ -80,7 +85,8 @@ namespace lyric_fetcher
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            textBox3.ScrollBars = ScrollBars.Both;
+            textBox3.WordWrap = false;
         }
 
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
